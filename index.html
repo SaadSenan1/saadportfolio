@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Senan | Front-End Developer</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="glass-header">
+    <nav class="nav-inline">
+      <a href="#about" class="nav-link">About </a>
+      <a href="#services" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+     <a href="#cv" class="nav-link">CV</a>
+      <a href="#contact" class="nav-link highlight">Contact</a>
+      
+    </nav>
+  </header>
+
+  <!-- ================= SIDE MENU (PC) دائماً مفتوح ================= -->
+<!-- ================= SIDE MENU (PC) دائماً مفتوح ================= -->
+<nav class="side-menu" id="sideMenu">
+  
+  <!-- صورتك داخل Side Menu -->
+  <div class="side-profile-wrapper">
+    <img src="sss.png" alt="Saad Senan">
+  </div>
+
+  <!-- الاسم واللقب -->
+  <div class="side-profile-text">
+    <h4>Saad Senan</h4>
+    <p>Front-End Web Developer</p>
+  </div>
+<div class="menu-toggle" id="menuToggle">
+  <i class="fas fa-chevron-left"></i>
+</div>
+  <!-- روابط Side Menu -->
+  <a href="#about">About me</a>
+  <a href="#services">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="creative-bg">
+    <div class="aurora"></div>
+    <div class="mesh"></div>
+  </div>
+  
+  <div class="hero-content">
+    <!-- AVAILABILITY BADGES -->
+    <div class="availability">
+      <div class="badge glass">
+        <i class="fas fa-bolt"></i>
+        <span>Available for Freelance</span>
+      </div>
+      <div class="badge glass">
+        <i class="fas fa-globe"></i>
+        <span>Open to Remote Work</span>
+      </div>
+    </div>
+
+    <!-- PROFILE IMAGE للموبايل فقط -->
+    <div class="profile-wrapper">
+      <img src="sss.png" alt="Saad Senan">
+    </div>
+
+    <h1>Hi, I’m <span>Saad Senan</span></h1>
+   <h2><span id="typing-text"></span><span class="cursor">|</span></h2>
+
+    <button class="cta-btn" onclick="scrollToContact()">Let’s Talk</button>
+
+   <div class="socials">
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/saad-senan-a34557374/"
+     target="_blank"
+     class="social glass">
+     <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/saadsenan1"
+     target="_blank"
+     class="social glass">
+     <i class="fab fa-github"></i>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:bogamer2006@gmail.com"
+     class="social glass">
+     <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/963996753785"
+     target="_blank"
+     class="social glass">
+     <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+  </div>
+</section>
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="section about fade-up">
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>Hello, my name is Saad Senan, I am 20 years old from syria and I study Computer Engineering. My English skills are good, I am proficient in JavaScript and CSS, and I have experience in multiple projects. I also work on UI/UX design to make applications and websites user-friendly and attractive. I am passionate about learning new skills and always strive to improve myself. Companies and projects I worked with praised the quality and professionalism of my work.</p>
+  </div>
+</section>
+  <!-- ================= SKILLS / SERVICES ================= -->
+<section id="services" class="section skills fade-up">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    
+    <!-- HTML -->
+    <div class="skill-card">
+      <i class="fab fa-html5 skill-icon"></i>
+      <h3>HTML</h3>
+      <p>Proficient in semantic HTML5, structuring responsive layouts, and ensuring accessibility standards.</p>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-card">
+      <i class="fab fa-css3-alt skill-icon"></i>
+      <h3>CSS</h3>
+      <p>Skilled in modern CSS techniques including Flexbox, Grid, animations, and responsive design.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-card">
+      <i class="fab fa-js skill-icon"></i>
+      <h3>JavaScript</h3>
+      <p>Knowledgeable in ES6+, DOM manipulation, event handling, and building interactive UI components.</p>
+    </div>
+
+    <!-- Responsive Design -->
+    <div class="skill-card">
+      <i class="fas fa-mobile-alt skill-icon"></i>
+      <h3>Responsive Design</h3>
+      <p></p>Experienced in creating mobile-first designs and layouts optimized for all screen sizes.
+    </div>
+
+    <!-- Skills إضافية -->
+    <div class="skill-card">
+      <i class="fas fa-code skill-icon"></i>
+      <h3>Additional Skills</h3>
+      <p>Familiar with Git, version control, and workflow best practices for collaborative projects.</p>
+    </div>
+  </section>
+  <!-- ================= PROJECTS ================= -->
+<section id="projects" class="section projects">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card fade-up">
+      <div class="project-image">
+        <img src="vape.png" alt="Project 1">
+      </div>
+
+      <div class="project-content">
+        <h3>E-Commerce Platform</h3>
+        <p>
+          Fully responsive online store with authentication,
+          cart system, and modern UI design.
+        </p>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-code">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="#" class="btn-live">
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card fade-up">
+      <div class="project-image">
+        <img src="project2.png" alt="Project 2">
+      </div>
+
+      <div class="project-content">
+        <h3>Admin Dashboard</h3>
+        <p>
+          Secure dashboard with protected routes,
+          charts integration, and responsive layout.
+        </p>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-code">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="#" class="btn-live">
+           Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card fade-up">
+      <div class="project-image">
+        <img src="prop.png" alt="Project 3">
+      </div>
+
+      <div class="project-content">
+        <h3>FinTech Web App</h3>
+        <p>
+          Prop firm styled platform with modern UI,
+          authentication and dynamic components.
+        </p>
+
+        <div class="project-buttons">
+          <a href="#" class="btn-code">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="#" class="btn-live">
+             Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="cv" class="cv-section">
+
+  <div class="cv-container">
+
+    <img src="Screenshot 2026-02-11 150157.png" alt="Saad CV Preview" class="cv-image">
+
+    <h2 class="cv-name">Saad Senan</h2>
+    <p class="cv-role">Front-End Web Developer</p>
+
+    <a href="saad cv (1).pdf"
+       download="Saad-Senan-CV.pdf"
+       class="cv-download-btn"><i class="fa-solid fa-download"></i>
+       Download CV
+    </a>
+
+  </div>
+
+</section>
+<section id="contact" class="section contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-grid">
+
+    <a href="mailto:bogamer2006@gmail.com" class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>bogamer2006@gmail.com</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/saad-senan-a34557374/" target="_blank" class="contact-card">
+      <i class="fab fa-linkedin-in"></i>
+      <h3>LinkedIn</h3>
+      <p>linkedin.com/in/saadsenan</p>
+    </a>
+
+    <a href="https://github.com/saadsenan1" target="_blank" class="contact-card">
+      <i class="fab fa-github"></i>
+      <h3>GitHub</h3>
+      <p>github.com/saadsenan1</p>
+    </a>
+
+    <a href="https://wa.me/963996753785" class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h3>Phone</h3>
+      <p>+963 996 753 785</p>
+    </a>
+
+  </div>
+</section>
+
+<script>
+  // اختيار كل العناصر اللي بدنا عليها fade-up
+const faders = document.querySelectorAll('.fade-up');
+
+const appearOptions = {
+  threshold: 0.1, // نسبة ظهور العنصر قبل تفعيل الانيميشن
+  rootMargin: "0px 0px -50px 0px" // تحريك نقطة التفعيل قبل وصول العنصر بالكامل
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add('show'); // إضافة كلاس show عند ظهور العنصر
+    observer.unobserve(entry.target);    // إلغاء المراقبة بعد ظهور العنصر
+  });
+}, appearOptions);
+
+// ربط المراقب بكل العناصر
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+const sideMenu = document.getElementById('sideMenu');
+const menuToggle = document.getElementById('menuToggle');
+
+menuToggle.addEventListener('click', () => {
+  sideMenu.classList.toggle('collapsed');
+});
+const cards = document.querySelectorAll(".project-card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("show");
+        }, index * 500); // كل كرت يتأخر نص ثانية
+      });
+
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+observer.observe(document.querySelector(".projects-section"));
+
+</script>
+<!-- ================= CONTACT ================= -->
+<script>
+  const text = "Front-End Web Developer";
+const typingElement = document.getElementById("typing-text");
+
+let index = 0;
+let isDeleting = false;
+
+function typeEffect() {
+
+  if (!isDeleting) {
+    typingElement.textContent = text.substring(0, index + 1);
+    index++;
+
+    if (index === text.length) {
+      setTimeout(() => isDeleting = true, 1200); // توقف قبل الحذف
+    }
+
+  } else {
+    typingElement.textContent = text.substring(0, index - 1);
+    index--;
+
+    if (index === 0) {
+      isDeleting = false;
+    }
+  }
+
+  const speed = isDeleting ? 50 : 90; // سرعة الكتابة والحذف
+  setTimeout(typeEffect, speed);
+}
+
+typeEffect();
+</script>
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
