@@ -106,7 +106,7 @@ body {
 
 /* ================= TEXT ================= */
 .hero h1 {
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 800;
   margin-top: 10px;
 }
@@ -175,7 +175,7 @@ body {
   top: 6px;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 40px;
+  margin-top: 70px;
   z-index: 1000;
   padding: 10px 20px;
   border-radius: 18px;
@@ -183,11 +183,12 @@ body {
   backdrop-filter: blur(18px);
   border: 1px solid rgba(0,255,150,0.25);
   box-shadow: 0 0 30px rgba(0,255,150,0.15);
+  width: 70%;
 }
 
 .nav-inline {
   display: flex;
-  gap: 18px;
+  gap: 4px;
 }
 
 .nav-link {
@@ -391,6 +392,11 @@ body {
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .availability{
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
