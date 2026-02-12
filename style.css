@@ -59,7 +59,6 @@ body {
   margin-bottom: 26px;
   margin-top: -80px;
   justify-content: center;
-  flex-wrap: wrap;
   animation: fadeDown 1.2s ease forwards;
 }
 
@@ -175,7 +174,7 @@ body {
   top: 6px;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 70px;
+  margin-top: 50px;
   z-index: 1000;
   padding: 10px 20px;
   border-radius: 18px;
@@ -188,7 +187,10 @@ body {
 
 .nav-inline {
   display: flex;
-  gap: 4px;
+  justify-content: center;
+  gap: 2px;
+ 
+  
 }
 
 .nav-link {
@@ -394,12 +396,40 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .availability{
-    width: 60%;
-    margin: 0 auto;
-  }
-}
 
+  .glass-header {
+    display: flex;
+justify-content: center;
+  }
+    .nav-inline {
+      width: 70%;
+      display: flex;
+      max-width: 300px;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+
+@media (max-width: 768px) {
+
+  .availability {
+    width: 90%;            /* أعرض شوي من 60% */
+    margin: 0 auto;        /* توسيط الحاوية */
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;     /* مهم جداً: يمنع النزول تحت */
+  }
+
+  .badge {
+    width: 50%;            /* كل واحد ياخد نص */
+    padding: 10px 12px;    /* تصغير padding شوي */
+    font-size: 13px;
+    justify-content: center; /* توسيط الأيقونة والنص */
+  }
+
+}
 /* Skill Card */
 .skill-card {
   background: rgba(0, 0, 0, 0.25);
