@@ -28,7 +28,7 @@
     </nav>
   </header>
 
-  <!-- ================= SIDE MENU (PC) دائماً مفتوح ================= -->
+ 
 <!-- ================= SIDE MENU (PC) دائماً مفتوح ================= -->
 <nav class="side-menu" id="sideMenu">
   
@@ -172,22 +172,29 @@
         <img src="vape.png" alt="Project 1">
       </div>
 
-      <div class="project-content">
-        <h3>E-Commerce Platform</h3>
-        <p>
-          Fully responsive online store with authentication,
-          cart system, and modern UI design.
-        </p>
+      
+ <div class="project-content">
+  <h3>E-Commerce Platform</h3>
+  <p>
+    Fully responsive online store with authentication,
+    cart system, and modern UI design.
+  </p>
+  <div class="project-buttons">
+    <a href="#"
+       class="btn-code"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Code
+    </a>
 
-        <div class="project-buttons">
-          <a href="#" class="btn-code">
-            <i class="fab fa-github"></i> Code
-          </a>
-          <a href="#" class="btn-live">
-            Live Demo
-          </a>
-        </div>
-      </div>
+    <a href="https://cityvapesy.com/"
+       class="btn-live"
+       target="_blank"
+       rel="noopener noreferrer">
+      Live Demo <i class="fas fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</div>
     </div>
 
     <!-- PROJECT 2 -->
@@ -203,42 +210,83 @@
           charts integration, and responsive layout.
         </p>
 
-        <div class="project-buttons">
-          <a href="#" class="btn-code">
-            <i class="fab fa-github"></i> Code
-          </a>
-          <a href="#" class="btn-live">
-           Live Demo
-          </a>
-        </div>
+       <div class="project-buttons">
+  <a href="https://github.com/SaadSenan1/ADMIN"
+     class="btn-code"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-github"></i> Code
+  </a>
+
+  <a href="https://saadsenan1.github.io/ADMIN/"
+     class="btn-live"
+     target="_blank"
+     rel="noopener noreferrer">
+     Live Demo <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
       </div>
     </div>
 
     <!-- PROJECT 3 -->
-    <div class="project-card fade-up">
+   
+      <div class="project-card fade-up">
       <div class="project-image">
-        <img src="prop.png" alt="Project 3">
+        <img src="image2.png" alt="Project 2">
       </div>
 
       <div class="project-content">
-        <h3>FinTech Web App</h3>
+        <h3>Online-Tech Store</h3>
         <p>
-          Prop firm styled platform with modern UI,
-          authentication and dynamic components.
+          A fully responsive e-commerce platform featuring a dynamic shopping cart, product search, and professional checkout flow.
         </p>
 
-        <div class="project-buttons">
-          <a href="#" class="btn-code">
-            <i class="fab fa-github"></i> Code
-          </a>
-          <a href="#" class="btn-live">
-             Live Demo
-          </a>
-        </div>
+       <div class="project-buttons">
+  <a href="https://github.com/SaadSenan1/cart.git"
+     class="btn-code"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-github"></i> Code
+  </a>
+
+  <a href="https://saadsenan1.github.io/cart/"
+     class="btn-live"
+     target="_blank"
+     rel="noopener noreferrer">
+     Live Demo <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
       </div>
     </div>
+    <div class="project-card fade-up">
+      <div class="project-image">
+        <img src="food.png" alt="Project 2">
+      </div>
 
-  </div>
+      <div class="project-content">
+        <h3>QuickBite-Food ordering Web App</h3>
+        <p>
+         A food ordering web app built with Vue.js, featuring reusable components, reactive state management, and a dynamic shopping cart.
+        </p>
+
+       <div class="project-buttons">
+  <a href="https://github.com/SaadSenan1/foodrepo.git
+"
+     class="btn-code"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-github"></i> Code
+  </a>
+
+  <a href="https://saadsenan1.github.io/food2//"
+     class="btn-live"
+     target="_blank"
+     rel="noopener noreferrer">
+     Live Demo <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+      </div>
+    </div>
 </section>
 <section id="cv" class="cv-section">
 
@@ -289,7 +337,44 @@
 
   </div>
 </section>
+<!-- Chat Button -->
+<div class="chat-toggle" id="chatToggle" onclick="toggleChat()">
+  <i class="fas fa-robot"></i>
+  <span class="close-icon">✕</span>
+</div>
+<!-- Chat Overlay -->
+<div class="chat-overlay" id="chatOverlay">
 
+  <div class="chat-container">
+
+    <div class="chat-header">
+  <div class="chat-header-info">
+    <img src="sss.png" alt="Saad">
+    <span>Saad AI Assistant</span>
+  </div>
+</div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">
+        Hi 👋 I'm Saad's AI assistant.
+      </div>
+    </div>
+
+  
+<div class="chat-input">
+  <input 
+    type="text" 
+    id="userInput" 
+    placeholder="Ask me about Saad..."
+    autocomplete="off"
+  />
+  <button id="sendBtn">
+    Send
+  </button>
+</div>
+  </div>
+
+</div>
 <script>
   // اختيار كل العناصر اللي بدنا عليها fade-up
 const faders = document.querySelectorAll('.fade-up');
@@ -370,6 +455,283 @@ function typeEffect() {
 }
 
 typeEffect();
+</script>
+<script>
+ // ====== ELEMENTS ======
+const input = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+const messages = document.getElementById("chatMessages");
+
+let isTyping = false;
+
+// ====== EVENTS ======
+sendBtn.addEventListener("click", handleSend);
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    handleSend();
+  }
+});
+
+// ====== INTENTS (ALL QUESTIONS & RESPONSES) ======
+const intents = [
+  // GREETING
+  
+  {
+    match: (msg) => /hi|hello|hey|how are you|كيفك|شلونك/.test(msg),
+    responses: [
+      "Hello! 👋 How's your day going?",
+      "Hey there! 😊 I'm happy you asked.",
+      "Hi! 🤖 Ready to chat about Saad?"
+    ]
+  },
+   {
+  match: (msg) => /what.*framework|which.*framework|your.*framework|using.*framework/.test(msg),
+  responses: [
+    "Currently, Saad builds projects using pure HTML, CSS, and JavaScript 💻. As a junior developer, he focuses on writing clean, structured, and responsive code before moving on to frameworks ⚡.",
+    "Saad is proficient in HTML, CSS, and vanilla JavaScript 🎯. He prefers mastering the fundamentals first, which is essential before adopting any front-end framework.",
+    "At the moment, Saad codes with pure HTML, CSS, and JavaScript 🚀. This approach strengthens his foundation as a junior developer and prepares him for learning frameworks in the future."
+  ]
+},// LINKEDIN
+{
+  match: (msg) => /linkedin|give.*linkedin|show.*linkedin/.test(msg),
+  responses: [
+    "Sure! You can visit Saad's LinkedIn profile here: 🔗 https://www.linkedin.com/in/saadsenan/"
+  ]
+},
+
+// GITHUB
+{
+  match: (msg) => /github|give.*github|show.*github/.test(msg),
+  responses: [
+    "Of course! Check out Saad's GitHub here: 🔗 https://github.com/saadsenan1"
+  ]
+},
+
+// CONTACT METHODS
+{
+  match: (msg) => /contact.*methods|ways.*contact|how.*contact|طرق.*تواصل/.test(msg),
+  responses: [
+    "You can reach Saad through several ways:\n- LinkedIn: 🔗 https://www.linkedin.com/in/saadsenan/\n- GitHub: 🔗 https://github.com/saadsenan1\n- WhatsApp: 🔗 https://wa.me/963998067029"
+  ]
+},
+
+// GIVE ME CONTACT LINK
+{
+  match: (msg) => /give.*contact|contact.*link/.test(msg),
+  responses: [
+    "Here are Saad's main contact links:\n- LinkedIn: 🔗 https://www.linkedin.com/in/saadsenan/\n- GitHub: 🔗 https://github.com/saadsenan1\n- WhatsApp: 🔗 https://wa.me/963998067029"
+  ]
+},
+{
+    match: (msg) => /work|job|currently.*working|هل.*تعمل/.test(msg),
+    responses: [
+      "Currently, Saad freelances 💼 while seeking full-time opportunities.",
+      "He is actively working as a freelancer and growing his skills 👨‍💻."
+    ]
+  },
+
+  // SKILLS
+  {
+    match: (msg) => /skill|skills|technology|stack|tech/.test(msg),
+    responses: [
+      "Saad specializes in HTML, CSS, and JavaScript 💻, focusing on responsive and structured front-end architecture.",
+      "His core stack includes HTML, CSS, JavaScript, and modern UI structuring techniques ⚡.",
+      "He builds performance-oriented and clean UI web applications 🚀."
+    ]
+  },
+
+  // EXPERIENCE
+  {
+    match: (msg) => /experience|years|خبرتك|اديش.*خبرة/.test(msg),
+    responses: [
+      "Saad has over one year of focused experience in front-end development 🏗️.",
+      "He has been actively building real-world web apps for more than a year 👨‍💻.",
+      "With over a year of hands-on experience, he keeps growing professionally 🌱."
+    ]
+  },
+
+  // PROJECTS
+  {
+    match: (msg) => /project|portfolio|built|work/.test(msg),
+    responses: [
+      "He built a secure Admin Dashboard 🔒, a full E-commerce platform 🛒, and a modern Prop Firm trading app 📊.",
+      "His portfolio includes structured and responsive real-world web apps 💼.",
+      "Saad's projects demonstrate practical implementation and clean architecture 🏛️."
+    ]
+  },
+
+  // CONTACT
+  {
+    match: (msg) => /contact|hire|reach|email|linkedin/.test(msg),
+    responses: [
+      "You can contact Saad via LinkedIn, GitHub, or through the website contact form ✉️.",
+      "Feel free to reach out on LinkedIn or the contact section of the site 🤝.",
+      "Saad is open to collaboration! Visit the contact page to connect 🌐."
+    ]
+  },
+
+  // ABOUT
+  {
+    match: (msg) => /who|about|yourself/.test(msg),
+    responses: [
+      "Saad is a junior web developer focused on structured, scalable, real-world applications 💡.",
+      "He loves front-end architecture, clean UI, and continuous improvement 🎯.",
+      "Saad builds practical systems, not just theory 📚."
+    ]
+  },
+
+  // STUDY
+  {
+    match: (msg) => /study|تدرس|major|university/.test(msg),
+    responses: [
+      "Saad studies ITE in Arab International University 🌍 (in progress) 🏫."
+    ]
+  },
+
+  // AGE
+  {
+    match: (msg) => /age|old|عمرك|اديش.*عمرك/.test(msg),
+    responses: [
+      "Saad is 20 years old 🎂.",
+      "Currently, he is 20 years young 😎."
+    ]
+  },
+
+  // NATIONALITY
+  {
+    match: (msg) => /nationality|citizen|جنسيتك|من.*اي.*بلد/.test(msg),
+    responses: [
+      "Saad is Syrian 🇸🇾.",
+      "He holds Syrian nationality 🌟."
+    ]
+  },
+
+
+  // HOBBIES (Optional, can expand later)
+  {
+    match: (msg) => /hobby|هواية|شو بتحب تعمل/.test(msg),
+    responses: [
+      "Saad enjoys coding, and exploring new web technologies 🎨💻.",
+      "He loves learning new skills and building real projects 🚀."
+    ]
+  },
+  {
+    match: (msg) => /where.*live|where.*from/.test(msg),
+    responses: [
+      "Saad currently lives in Syria 🇸🇾.",
+      "He is based in Syria 🏡.",
+      "Saad is currently located in Syria 🌟."
+    ]
+  },// LANGUAGES
+{
+  match: (msg) => /languages|lang|شو.*لغات|what.*languages/.test(msg),
+  responses: [
+    "Saad speaks Arabic 🇸🇾 (native) and English 🏫 (intermediate). He is currently learning English at a language institute in Syria 📚.",
+    "His language skills include Arabic (native) and English (intermediate) 🌍. He continues to improve his English in an institute in Syria.",
+    "Saad is fluent in Arabic 🇸🇾 and learning English at an intermediate level 📝 through a language institute in Syria."
+  ]
+}
+];
+
+// ====== MAIN FUNCTION ======
+function handleSend() {
+  if (isTyping) return;
+
+  const text = input.value.trim();
+  if (!text) return;
+
+  addMessage(text, "user");
+  input.value = "";
+
+  const normalized = normalize(text);
+  const response = generateResponse(normalized);
+
+  showTyping(response);
+}
+
+// ====== NORMALIZE INPUT ======
+function normalize(text) {
+  return text.toLowerCase().replace(/[^\w\s]/gi, "").trim();
+}
+
+// ====== GENERATE RESPONSE ======
+function generateResponse(message) {
+  for (let intent of intents) {
+    if (intent.match(message)) return randomResponse(intent.responses);
+  }
+  return "😅 I might not understand that yet. Can you try rephrasing?";
+}
+
+// ====== RANDOM RESPONSE ======
+function randomResponse(responses) {
+  return responses[Math.floor(Math.random() * responses.length)];
+}
+
+// ====== ADD MESSAGE TO CHAT ======
+// ====== ADD MESSAGE TO CHAT (with HTML support for links) ======
+function addMessage(text, type) {
+  const msg = document.createElement("div");
+  msg.className = "message " + type;
+  msg.innerHTML = text; // استخدم innerHTML عشان HTML يعمل
+
+  // إضافة CSS للروابط داخل الرسالة
+  msg.querySelectorAll("a").forEach(link => {
+    link.style.color = "purple";           // لون الخط بنفسجي
+    link.style.textDecoration = "underline"; // خط تحت الكلمة
+    link.style.cursor = "pointer";          // لما تحوم الماوس يصير pointer
+  });
+
+  messages.appendChild(msg);
+  scrollToBottom();
+}
+
+// ====== TYPING EFFECT WITH THINKING ======
+function showTyping(response) {
+  isTyping = true;
+
+  const typing = document.createElement("div");
+  typing.className = "message bot";
+  typing.textContent = "🤔 Thinking...";
+  messages.appendChild(typing);
+  scrollToBottom();
+
+  setTimeout(() => {
+    typing.remove();
+    typeMessage(response);
+  }, 2000); // 2 seconds thinking
+}
+
+function typeMessage(text) {
+  const msg = document.createElement("div");
+  msg.className = "message bot";
+  messages.appendChild(msg);
+
+  let index = 0;
+  const interval = setInterval(() => {
+    msg.textContent += text.charAt(index);
+    index++;
+    scrollToBottom();
+
+    if (index >= text.length) {
+      clearInterval(interval);
+      isTyping = false;
+    }
+  }, 18);
+}
+
+// ====== AUTO SCROLL ======
+function scrollToBottom() {
+  messages.scrollTop = messages.scrollHeight;
+}
+
+// ====== CHAT TOGGLE (OPTIONAL UI) ======
+function toggleChat() {
+  const chat = document.querySelector(".chat-container");
+  const toggle = document.getElementById("chatToggle");
+  chat.classList.toggle("open");
+  toggle.classList.toggle("active");
+}
 </script>
   <!-- JS -->
   <script src="main.js"></script>
